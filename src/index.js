@@ -5,7 +5,7 @@ function updateSubtotal(product) {
   let quantity = product.querySelector('.quantity input[type =number]').value;
   let subtotal = product.querySelector('.subtotal span')
   let newSubtotal = price * quantity;
-   subtotal.innerHTML = newSubtotal;
+   return subtotal.innerHTML = newSubtotal;
   console.log('Calculating subtotal, yey!');
 
   //... your code goes here
@@ -32,7 +32,7 @@ function calculateAll() {
   // ITERATION 3
   total += parseFloat(product.querySelector('.subtotal span').innerHTML);
   });
-  document.querySelector('#total-value span').innerHTML = total;
+  return document.querySelector('#total-value span').innerHTML = total;
 
 }
   
