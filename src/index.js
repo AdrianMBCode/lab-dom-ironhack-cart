@@ -41,11 +41,14 @@ function calculateAll() {
 // ITERATION 4
 
 function removeProduct(event) {
-  const target = event.currentTarget;
+  let remove = document.querySelectorAll('.btn btn-remove');
+  remove.forEach(remove => {remove.addEventListener('click', removeProduct);
+  let target = event.currentTarget;
   console.log('The target in remove is:', target);
   //... your code goes here
+});
+return document.querySelector('btn btn-remove').innerHTML = target;
 }
-
 // ITERATION 5
 
 function createProduct() {
